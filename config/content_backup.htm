@@ -11,7 +11,29 @@
 <p>任何人想要利用電腦的能力解決問題, 就必須學會編寫電腦程式, 與電腦溝通.</p>
 <p></p><h1>week3</h1>
 <p>根據 <a href="https://2019wcm.blogspot.com/2019/03/ungit.html">https://2019wcm.blogspot.com/2019/03/ungit.html</a> 的設定, 完成 ungit 配置.</p><h1>git http 與 ssh</h1>
-<h1>目錄結構</h1>
+<p>利用 ssh 對 git 改版, 必須使用  home/.ssh/config 設定, 才能透過 proxy 伺服器進行連線, 由於在 IPv6 環境下, 必須要透過 proxy 才能對 Git 連線, 因此若無 config, 無法對遠端改版</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">ProxyCommand y:/PortableGit/mingw64/bin/connect.exe -H 140.130.17.53:3128 %h %p
+
+Host github.com
+User git
+Port 22
+Hostname github.com
+
+IdentityFile "y:\home\.ssh\id_rsa"
+
+TCPKeepAlive yes
+IdentitiesOnly yes
+
+Host ssh.github.com
+User git
+Port 443
+Hostname ssh.github.com
+
+IdentityFile "y:\home\.ssh\id_rsa"
+
+TCPKeepAlive yes
+IdentitiesOnly yes</pre>
+<p></p><h1>目錄結構</h1>
 <p>第二位想要編輯這裡</p>
 <p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/9A-hg32eD-s" width="560"></iframe></p>
 <p>CMSimfly 的動態系統採用 Python3 + Flask 建構, 並且利用 Beatifulsoup 解讀位於 contig 目錄中的 content.htm 超文件檔案.</p>
