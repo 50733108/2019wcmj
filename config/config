@@ -1,14 +1,2 @@
-# no proxy at home
-ProxyCommand y:/PortableGit/mingw64/bin/connect.exe -H 140.130.17.32:3128 %h %p
-
-#for 50733108
-#url = git@github.com_50733108:50733108/cd2019.git
-Host github.com_50733108
-    User git
-    Port 22
-    Hostname github.com
-    
-    IdentifyFile "y:\home\.ssh\id_rsa_50733108"
-    
-    TCPKeepAlive yes
-    IdentitiesOnly yes
+siteTitle:CMSimfly 
+password:c7ad44cbad762a5da0a452f9e854fdc1e0e7a52a38015f23f3eab1d80b931dd472634dfac71cd34ebc35d16ab7fb8a90c81f975113d6c7538dc69dd8de9077ec
