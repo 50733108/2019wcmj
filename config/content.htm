@@ -1,5 +1,7 @@
 <h1>期末報告</h1>
-<p><span>請別對此作業抱有太大期望 </span></p>
+<p><strong>五精一甲   50733108  陳振輝</strong></p>
+<p><span></span></p>
+<p>請別對此作業抱有太大期望 </p>
 <p><span>期中的分數是亂打的</span></p>
 <p><span>並沒有抱持著什麼偉大理想而輸入分數</span></p><h1>1.網路連線設定</h1>
 <p>(1)按下右上方的3點線並進入"設定"(setting)</p>
@@ -26,17 +28,28 @@
 <p><span style="background-color: #ffcc99;">先擁有Github的倉儲</span></p>
 <p><span style="background-color: #ffffff;"> clone 倉儲至近端工作後, 對遠端倉儲改版</span></p>
 <p><span style="background-color: #ffffff;"><span>可攜程式系統中已經內建 git, 可以在啟動 start.bat 後, 透過 path 的設定, 直接執行 git 指令</span><br/><br/><span>建立 Git 倉儲, 共分為兩類, 一類是直接在 Github 網際介面下建立倉儲時, 要求建立 README.md 檔案, 之後可以直接在近端, 以 git clone 加上倉儲連線 URL, 將倉儲克隆一份到近端, 並以最新版本作為工作目錄, 使用者改版後, 可以直接透過 git add, commit 與 push 對遠端倉儲改版.</span><br/><br/><span>另一類則是在 Github 網際介面下建立倉儲時, 不要建立任何檔案, 而是在近端自行利用 git 指令建立倉儲架構, 新增內容後, 以 git remote add 設法在近端倉儲中納入 origin URL 後, 將近端倉儲版本新增提交推送到遠端.</span></span></p>
-<p><span style="background-color: #ffcc99;"></span></p><h1>亂數抽選</h1>
+<p><span style="background-color: #ffcc99;"></span>git add .   將使用者對近端網(動態網)的更動做一個拍快照的動作</p>
+<p>git commit  :  將上述的快照提交至倉儲  </p>
+<p>git push  :  將使用者對近態網的更改傳到靜端網(遠端網)上並更改                                                                            (git push時是用config裡的"URL協定"完成)</p>
+<p><span>git config --edit --system  :  編輯近端設定  輸入:wq (write quit)來離開編輯頁。</span><span>我們編輯的目的為去除"要求登入的小視窗"  因為系統會自動記憶輸入的帳號而且每次都要輸入也麻煩  所以清除它來防隱私跟去麻煩   但是需要下面指令來自動登入並達成各式指令</span></p>
+<p><span>ssh-keygen -t rsa -b 4096 -C "username(學號)" :   建立公鑰及私鑰並將公鑰放入github的ssh key  完成以上動作時完成自動登入動作  可省略輸入帳號密碼這步驟即可擁有權限來進行指令 Ex. git commit</span></p>
+<p><span></span>git status  :  確認系統是否改版成功</p>
+<p>python wsgi.py : 連上動態網(須連上對應跟目錄才可叫出)</p>
+<p>kungit  :  利用樹狀圖來直接確認git push 是否成功或者可直接在那上面push</p>
+<p></p>
+<p></p><h1>亂數抽選</h1>
 <p></p>
 <p></p>
 <div class="line number1 index0 alt2"><code class="html plain"></code></div>
-<p><button onclick="myFunction()">按一下</button></p>
+<p><button onclick="myFunction()">Start</button></p>
 <p id="demo"></p>
 <script>// <![CDATA[
 // <![CDAIA[
 function myFunction(){
  document.getElementById("demo").innerHTML = Math.floor(Math.random()*50+1);
- //document.getElementById("demo").innerHTML ="按一下";
+ //document.getElementById("demo").innerHTML ="Start";
  alert("Here You Are");
 }
-// ]]></script>
+// ]]></script><h1>資料來源</h1>
+<p><code class="html string">嚴家銘老師的期末示範網: <a href="http://cpgx.kmol.info/wcm2019/content/index.html">http://cpgx.kmol.info/wcm2019/content/index.html</a></code></p><h1>期中報告</h1>
+<p>很隨便的期中作業 :  <a href="https://www.youtube.com/watch?v=XOHeedUke1c">https://www.youtube.com/watch?v=XOHeedUke1c</a></p>
