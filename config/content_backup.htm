@@ -1,1 +1,42 @@
-<h1>簡介</h1>
+<h1>期末報告</h1>
+<p><span>請別對此作業抱有太大期望 </span></p>
+<p><span>期中的分數是亂打的</span></p>
+<p><span>並沒有抱持著什麼偉大理想而輸入分數</span></p><h1>1.網路連線設定</h1>
+<p>(1)按下右上方的3點線並進入"設定"(setting)</p>
+<p>(2)滑到底下按下"進階"(advanced)</p>
+<p>(3)點擊倒數第2個"系統"(system)裡的"開啟proxy設定"(open proxy setting)</p>
+<p>(4)按下"Lan設定"</p>
+<p>(5)"位址"可改變所連的網路 。</p>
+<p>       連接埠旁的"進階"可設定:不為開頭為下列項目的位址使用proxy伺服器。</p>
+<p><span style="color: #ff0000;">Btw </span></p>
+<p><span style="color: #ff0000;">1.</span>&lt;140.130&gt;開頭的網址沒有加密；&lt;192.168&gt;有加密 閒雜人等無法連上</p>
+<p><span style="color: #ff0000;">2.</span>IPV6能力大於<span>IPV4</span></p>
+<p><span><span style="color: #ff0000;">3</span>.140.130.17為學校網路開頭 後面接".數字"來確認連上哪台  53為最強</span></p><h1>2.配置可攜程式環境</h1>
+<p>將存在於USB中的"cd2019_cdb_w5"打開(此操作只可在Window10系統打開)</p>
+<p>"start.bat"為打開環境；"stop.bat"為停止運作</p>
+<p><span style="background-color: #ffffff; color: #00ccff;">輸入指示各功能</span></p>
+<p>c:   切換到C槽。  反之  "Y:"為切入"Y槽"</p>
+<p>cd  切換根目錄(資料夾)。可一次性大量切換 Ex.   cd tmp\repo\ssh\cmstest</p>
+<p>cd..   跳出根目錄  返回到上個根目錄</p>
+<p>dir  查看所在目錄內容</p>
+<p>mkdir (make directory)  建立一個資料夾  可隨意命名 Ex. 取名為  " ssh"</p>
+<p>cls  清除之前指示的顯示內容</p>
+<p></p>
+<p></p><h1>3.倉儲改版</h1>
+<p><span style="background-color: #ffcc99;">先擁有Github的倉儲</span></p>
+<p><span style="background-color: #ffffff;"> clone 倉儲至近端工作後, 對遠端倉儲改版</span></p>
+<p><span style="background-color: #ffffff;"><span>可攜程式系統中已經內建 git, 可以在啟動 start.bat 後, 透過 path 的設定, 直接執行 git 指令.</span><br/><br/><span>建立 Git 倉儲, 共分為兩類, 一類是直接在 Github 網際介面下建立倉儲時, 要求建立 README.md 檔案, 之後可以直接在近端, 以 git clone 加上倉儲連線 URL, 將倉儲克隆一份到近端, 並以最新版本作為工作目錄, 使用者改版後, 可以直接透過 git add, commit 與 push 對遠端倉儲改版.</span><br/><br/><span>另一類則是在 Github 網際介面下建立倉儲時, 不要建立任何檔案, 而是在近端自行利用 git 指令建立倉儲架構, 新增內容後, 以 git remote add 設法在近端倉儲中納入 origin URL 後, 將近端倉儲版本新增提交推送到遠端.</span></span></p>
+<p><span style="background-color: #ffcc99;"></span></p><h1>亂數抽選</h1>
+<p></p>
+<p></p>
+<div class="line number1 index0 alt2"><code class="html plain"></code></div>
+<p><button onclick="myFunction()">按一下</button></p>
+<p id="demo"></p>
+<script>// <![CDATA[
+// <![CDAIA[
+function myFunction(){
+ document.getElementById("demo").innerHTML = Math.floor(Math.random()*50+1);
+ //document.getElementById("demo").innerHTML ="按一下";
+ alert("Here You Are");
+}
+// ]]></script>
