@@ -131,6 +131,76 @@ ctx.closePath()
 # 填色設為白色
 ctx.fillStyle = '#fff'
 ctx.fill()
+</script>
+<!-- 啟動 Brython -->
+<script>
+window.onload=function(){
+// 設定 data/py 為共用程式路徑
+brython({debug:1, pythonpath:['./../data/py']});
+}
+</script>
+<p><canvas height="400" id="plotarea3" width="600"></canvas></p>
+<script type="text/python">
+# 導入 doc
+from browser import document as doc
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea3"]
+ctx = canvas.getContext("2d")
+def blueWhite(ctx, x, y, flag_w, flag_h):
+    # 再畫青天
+    ctx.fillStyle='rgb(0, 0, 150)'
+    #ctx.fillRect(x-flag_w/4, y-flag_h/4, flag_w/2, flag_h/2)
+    ctx.fillRect(x-flag_w/2, 0, flag_w/2, flag_h)
+    # 畫十二道光芒白日
+    ctx.beginPath()
+    star_radius = flag_w/8
+    angle = 0
+    for i in range(24):
+        angle += 5*math.pi*2/12
+        toX = x + math.cos(angle)*star_radius
+        toY = y + math.sin(angle)*star_radius
+        # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
+        if (i):
+            ctx.lineTo(toX, toY)
+        else:
+            ctx.moveTo(toX, toY)
+    ctx.closePath()
+    # 將填色設為白色
+    ctx.fillStyle = '#fff'
+    ctx.fill()
+    # 白日:藍圈
+    ctx.beginPath()
+    ctx.arc(x, y, flag_w*17/240, 0, math.pi*2, True)
+    ctx.closePath()
+    # 填色設為藍色
+    ctx.fillStyle = 'rgb(0, 0, 149)'
+    ctx.fill()
+    # 白日:白心
+    ctx.beginPath()
+    ctx.arc(x, y, flag_w/16, 0, math.pi*2, True)
+    ctx.closePath()
+    # 填色設為白色
+    ctx.fillStyle = '#fff'
+    ctx.fill()
+# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
+# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
+# 以下採用 canvas 原始座標繪圖
+flag_w = canvas.width
+flag_h = canvas.height
+circle_x = flag_w/2
+circle_y = flag_h/2
+# 先畫滿地紅
+ctx.fillStyle='rgb(255, 0, 0)'
+ctx.fillRect(0,0,flag_w,flag_h)
+blueWhite(ctx, circle_x, circle_y, flag_w, flag_h)
+</script>
+<p><canvas height="400" id="plotarea2" width="600"></canvas></p>
+<script type="text/python">
+# 導入 doc
+from browser import document as doc
+import math
 </script><h1>網路連線設定</h1>
 <p>(1)按下右上方的3點線並進入"設定"(setting)</p>
 <p><img alt="" height="243" src="/images/3點.png" width="259"/></p>
@@ -235,5 +305,6 @@ function myFunction(){
 <p><code class="html string">嚴家銘老師的期末示範網: <a href="http://cpgx.kmol.info/wcm2019/content/index.html">http://cpgx.kmol.info/wcm2019/content/index.html</a></code></p>
 <p><code class="html string">上課時所抄的筆記</code></p>
 <p><code class="html string">上課錄影<a href="https://www.youtube.com/channel/UCJ0Ye3mhMApH0yxAcwCXs5g/videos">https://www.youtube.com/channel/UCJ0Ye3mhMApH0yxAcwCXs5g/videos</a></code></p>
+<p><code class="html string">VPN的部分:<a href="https://nfucc.nfu.edu.tw/zh/download/download-network/ssl-vpn">https://nfucc.nfu.edu.tw/zh/download/download-network/ssl-vpn</a></code></p>
 <p><code class="html string"></code></p><h1>期中報告</h1>
 <p>很隨便的期中作業 :  <a href="https://www.youtube.com/watch?v=XOHeedUke1c">https://www.youtube.com/watch?v=XOHeedUke1c</a></p>
