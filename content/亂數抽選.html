@@ -83,6 +83,20 @@ $(document).ready(doSearch);
 <p></p>
 <div class="line number1 index0 alt2"><code class="html plain"></code></div>
 <p><button onclick="myFunction()">Start</button></p>
+<p>原始碼</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;div class="line number1 index0 alt2"&gt;&lt;code class="html plain"&gt;&lt;/code&gt;&lt;/div&gt;
+&lt;p&gt;&lt;button onclick="myFunction()"&gt;Start&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;原始碼&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p id="demo"&gt;&lt;/p&gt;
+&lt;script&gt;// &lt;![CDATA[
+// &lt;![CDAIA[
+function myFunction(){
+ document.getElementById("demo").innerHTML = Math.floor(Math.random()*50+1);
+ //document.getElementById("demo").innerHTML ="Start";
+ alert("Here You Are");
+}
+// ]]&gt;&lt;/script&gt;</pre>
 <p id="demo"></p>
 <script>
 // <![CDAIA[
