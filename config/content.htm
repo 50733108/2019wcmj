@@ -334,14 +334,21 @@ import math
 <p>5.完成後右下方會出現所示圖案  此圖表示成功</p>
 <p><img alt="" height="209" src="/images/VPN設好下方.png" width="209"/></p><h1>亂數抽選</h1>
 <p></p>
-<p></p>
 <div class="line number1 index0 alt2"><code class="html plain"></code></div>
 <p><button onclick="myFunction()">Start</button></p>
 <p></p>
+<p id="demo"></p>
+<script>
+// <![CDAIA[
+function myFunction(){
+ document.getElementById("demo").innerHTML = Math.floor(Math.random()*50+1);
+ //document.getElementById("demo").innerHTML ="Start";
+ alert("Here You Are");
+}
+</script>
 <p>原始碼</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;div class="line number1 index0 alt2"&gt;&lt;code class="html plain"&gt;&lt;/code&gt;&lt;/div&gt;
 &lt;p&gt;&lt;button onclick="myFunction()"&gt;Start&lt;/button&gt;&lt;/p&gt;
-&lt;p&gt;原始碼&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p id="demo"&gt;&lt;/p&gt;
 &lt;script&gt;// &lt;![CDATA[
@@ -352,15 +359,7 @@ function myFunction(){
  alert("Here You Are");
 }
 // ]]&gt;&lt;/script&gt;</pre>
-<p id="demo"></p>
-<script>
-// <![CDAIA[
-function myFunction(){
- document.getElementById("demo").innerHTML = Math.floor(Math.random()*50+1);
- //document.getElementById("demo").innerHTML ="Start";
- alert("Here You Are");
-}
-</script><h1>資料來源</h1>
+<p></p><h1>資料來源</h1>
 <p><code class="html string"><a href="http://cpgx.kmol.info/wcm2019/content/index.html">嚴家銘老師的期末示範網</a></code></p>
 <p><a href="https://www.youtube.com/channel/UCJ0Ye3mhMApH0yxAcwCXs5g/videos">所有上課錄影的youtube頻道</a></p>
 <p><code class="html string"><a href="https://nfucc.nfu.edu.tw/zh/download/download-network/ssl-vpn">VPN的部分</a></code></p>

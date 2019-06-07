@@ -149,14 +149,21 @@ init_mathjax();
         </header>
     <div id="tipue_search_content">VPN << <a href='VPN.html'>Previous</a> <a href='資料來源.html'>Next</a> >> 資料來源<br /><h1>亂數抽選</h1>
 <p></p>
-<p></p>
 <div class="line number1 index0 alt2"><code class="html plain"></code></div>
 <p><button onclick="myFunction()">Start</button></p>
 <p></p>
+<p id="demo"></p>
+<script>
+// <![CDAIA[
+function myFunction(){
+ document.getElementById("demo").innerHTML = Math.floor(Math.random()*50+1);
+ //document.getElementById("demo").innerHTML ="Start";
+ alert("Here You Are");
+}
+</script>
 <p>原始碼</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;div class="line number1 index0 alt2"&gt;&lt;code class="html plain"&gt;&lt;/code&gt;&lt;/div&gt;
 &lt;p&gt;&lt;button onclick="myFunction()"&gt;Start&lt;/button&gt;&lt;/p&gt;
-&lt;p&gt;原始碼&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p id="demo"&gt;&lt;/p&gt;
 &lt;script&gt;// &lt;![CDATA[
@@ -167,15 +174,7 @@ function myFunction(){
  alert("Here You Are");
 }
 // ]]&gt;&lt;/script&gt;</pre>
-<p id="demo"></p>
-<script>
-// <![CDAIA[
-function myFunction(){
- document.getElementById("demo").innerHTML = Math.floor(Math.random()*50+1);
- //document.getElementById("demo").innerHTML ="Start";
- alert("Here You Are");
-}
-</script><br />VPN << <a href='VPN.html'>Previous</a> <a href='資料來源.html'>Next</a> >> 資料來源</div>
+<p></p><br />VPN << <a href='VPN.html'>Previous</a> <a href='資料來源.html'>Next</a> >> 資料來源</div>
         
     <!-- footer -->
       <div class="container">
