@@ -1,5 +1,10 @@
-<h1>期末報告</h1>
-<p><strong>五精一甲   50733108  陳振輝</strong></p>
+<h1>首頁</h1>
+<p>這裡是 虎科大 五精一甲 50733108 陳振輝的倉儲</p>
+<p>因應課堂需求而開了這個倉儲，請多指教</p>
+<p>完成日期為2019 6/9</p>
+<p><img alt="" height="307" src="/images/class name.png" width="522"/></p>
+<p></p><h1>期末報告</h1>
+<h1>期末報告相關資訊</h1>
 <p><span></span></p>
 <p><img alt="" height="509" src="/images/score.png" width="792"/></p>
 <p><img alt="" height="597" src="/images/Schedule.png" width="616"/> </p>
@@ -201,13 +206,11 @@ blueWhite(ctx, circle_x, circle_y, flag_w, flag_h)
 from browser import document as doc
 import math
 </script><h1>網路連線設定</h1>
-<p>(1)按下右上方的3點線並進入"設定"(setting)</p>
-<p><img alt="" height="243" src="/images/3點.png" width="259"/></p>
-<p><img alt="" height="554" src="/images/設定.png" width="346"/></p>
+<p>可在cmd輸入nslookup查詢可用proxy位址或者輸入ipconfig得到IP相關資訊</p>
+<p>(1)進入"設定"(setting)</p>
 <p>(2)滑到底下按下"進階"(advanced)</p>
-<p><img alt="" height="96" src="/images/進階.png" width="277"/></p>
 <p>(3)點擊倒數第2個"系統"(system)裡的"開啟proxy設定"(open proxy setting)</p>
-<p><img alt="" height="146" src="/images/小圖形.png" width="273"/></p>
+<p><img alt="" height="275" src="/images/小圖形.png" width="514"/></p>
 <p>(4)按下"Lan設定"</p>
 <p><img alt="" height="388" src="/images/lan設定.png" width="300"/></p>
 <p>(5)"位址"可改變所連的網路 。</p>
@@ -220,12 +223,18 @@ import math
 <p><span><span style="color: #ff0000;">3</span>.140.130.17為學校網路開頭 後面接".數字"來確認連上哪台  53為最強</span></p><h1>配置可攜程式環境</h1>
 <p>將存在於USB中的"cd2019_cdb_w5"打開(此操作只可在Window10系統打開)</p>
 <p>"start.bat"為打開環境；"stop.bat"為停止運作</p>
+<p>格式可分為</p>
+<p>FAT32 : 兼容性高但安全度不夠，下載檔案不可超出4GB，名字字數不可超出225，不建議使用此格式</p>
+<p>FAT64 : 兼容性好，檔案下載為256GB以下</p>
+<p>NTFS : 好管理、適合放數據資料、屬於微軟專利其他人需藉由第3方協助才可用</p>
+<p><span style="color: #ff6600;">使用Virtual Box 時需下載Ubuntu，所以USB需格式成NTFS才好用</span></p>
 <p><span style="background-color: #ffffff; color: #00ccff;"></span></p>
 <p></p>
 <p></p><h1>倉儲改版</h1>
 <p><span style="background-color: #ffcc99;">先擁有Github的倉儲</span></p>
 <p><span style="background-color: #ffffff;"> clone 倉儲至近端工作後, 對遠端倉儲改版</span></p>
 <p><span style="background-color: #ffffff;"><span>可攜程式系統中已經內建 git, 可以在啟動 start.bat 後, 透過 path 的設定, 直接執行 git 指令</span><br/><br/><span>建立 Git 倉儲, 共分為兩類, 一類是直接在 Github 網際介面下建立倉儲時, 要求建立 README.md 檔案, 之後可以直接在近端, 以 git clone 加上倉儲連線 URL, 將倉儲克隆一份到近端, 並以最新版本作為工作目錄, 使用者改版後, 可以直接透過 git add, commit 與 push 對遠端倉儲改版.</span><br/><br/><span>另一類則是在 Github 網際介面下建立倉儲時, 不要建立任何檔案, 而是在近端自行利用 git 指令建立倉儲架構, 新增內容後, 以 git remote add 設法在近端倉儲中納入 origin URL 後, 將近端倉儲版本新增提交推送到遠端.</span></span></p><h2>指令區</h2>
+<p>此區的指令需輸入在開啟後cd2019_cdb_w5的黑面板裡才可發揮功效</p>
 <p><span style="background-color: #ffcc99;"></span>git add .   將使用者對近端網(動態網)的更動做一個拍快照的動作</p>
 <p>git commit  :  將上述的快照提交至倉儲  </p>
 <p>git push  :  將使用者對近態網的更改傳到靜端網(遠端網)上並更改 (git push時是用config裡的"URL協定"完成)</p>
@@ -240,7 +249,7 @@ import math
 <p>dir  查看所在目錄內容</p>
 <p>mkdir (make directory)  建立一個資料夾  可隨意命名 Ex. 取名為  " ssh"</p>
 <p>cls  清除之前指示的顯示內容</p>
-<p>git reset --hard HEAD  :  將倉儲還原成上一次版本</p>
+<p>git reset --hard HEAD  :  將倉儲還原成上一次推送版本</p>
 <p></p>
 <p></p><h1>倉儲編輯相關</h1>
 <p><span style="background-color: #ccffcc;">萬事起頭為"log in"</span></p>
@@ -289,7 +298,7 @@ import math
 <p>2.先按圖進行網路設定後開啟虛擬主機</p>
 <p><img alt="" height="76" src="/images/VirtualBox setting 1.png" width="202"/></p>
 <p><img alt="" height="304" src="/images/VirtualBox setting 2.png" width="487"/></p>
-<p>3.Download Ubuntu</p>
+<p>3.Download Ubuntu，要檢查USB是否格式成NTFS，<a href="https://50733108.github.io/2019wcmj/content/%E9%85%8D%E7%BD%AE%E5%8F%AF%E6%94%9C%E7%A8%8B%E5%BC%8F%E7%92%B0%E5%A2%83.html">因為...</a></p>
 <p>Enter this website</p>
 <p><img alt="" height="306" src="/images/ubuntu search.png" width="454"/></p>
 <p><img alt="" height="81" src="/images/choose the download .png" width="444"/></p>
@@ -305,7 +314,7 @@ import math
 <p>(5)按space打叉之後按done再按done</p>
 <p>(6)Reboot按下後會重新啟動  即可完成</p>
 <p>6.開機完成後需要登入 登入完成後畫面須為  "帳號名$" 才可輸入指令</p>
-<p>ifconfig : 查看現在網路連線</p>
+<p>ifconfig : 查看現在主機位址，每人不同</p>
 <p><span> sudo apt install nginx  : 安裝 nginx WWW 伺服器</span></p>
 <p><span>7.Download FileZilla </span></p>
 <p><span><img alt="" height="169" src="/images/search filezilla client portable.png" width="504"/></span></p>
@@ -345,7 +354,21 @@ function myFunction(){
  //document.getElementById("demo").innerHTML ="Start";
  alert("Here You Are");
 }
-</script><h1>資料來源</h1>
+</script>
+<p>原始碼</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;div class="line number1 index0 alt2"&gt;&lt;code class="html plain"&gt;&lt;/code&gt;&lt;/div&gt;
+&lt;p&gt;&lt;button onclick="myFunction()"&gt;Start&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p id="demo"&gt;&lt;/p&gt;
+&lt;script&gt;// &lt;![CDATA[
+// &lt;![CDAIA[
+function myFunction(){
+ document.getElementById("demo").innerHTML = Math.floor(Math.random()*50+1);
+ //document.getElementById("demo").innerHTML ="Start";
+ alert("Here You Are");
+}
+// ]]&gt;&lt;/script&gt;</pre>
+<p></p><h1>資料來源</h1>
 <p><code class="html string"><a href="http://cpgx.kmol.info/wcm2019/content/index.html">嚴家銘老師的期末示範網</a></code></p>
 <p><a href="https://www.youtube.com/channel/UCJ0Ye3mhMApH0yxAcwCXs5g/videos">所有上課錄影的youtube頻道</a></p>
 <p><code class="html string"><a href="https://nfucc.nfu.edu.tw/zh/download/download-network/ssl-vpn">VPN的部分</a></code></p>
@@ -377,15 +400,18 @@ function myFunction(){
 <p>版本控制是一種紀錄一個或若干文件內容變化以便將來查閱特定版本修訂情況的系統</p>
 <p>建立公鑰私鑰(可參考<a href="https://50733108.github.io/2019wcmj/content/%E6%8C%87%E4%BB%A4%E5%8D%80.html">指令區</a></p>
 <p><span style="color: #ff6600;">3/26</span></p>
-<p>WWW全球資訊網(World Wide Web)</p>
+<p>WWW全球資訊網(World Wide Web)使用HTML超文件、2D影像、瀏覽器</p>
+<p>1994年Stephen Jobs建立NEST 之後有人買走拿去建立了3W系統</p>
 <p>github不支援ipv6</p>
-<p>開啟ShareX按Ctrl+printscreen螢幕截圖</p>
+<p>開啟ShareX按Ctrl+printscreen螢幕截圖 </p>
+<p>使用某網路IP完盜版遊戲時其網路IP會被攻擊而不能使用  系上已有網路因此而無法使用</p>
 <p>開啟動態網(參考<a href="https://50733108.github.io/2019wcmj/content/%E6%8C%87%E4%BB%A4%E5%8D%80.html">指令區</a></p>
 <p></p><h2>4月</h2>
 <p><span style="color: #800080;">4/2</span></p>
 <p><a href="https://50733108.github.io/2019wcmj/content/%E5%80%89%E5%84%B2%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95%E7%B0%A1%E4%BB%8B.html">倉儲編輯</a></p>
 <p><span style="color: #800080;">4/9</span></p>
 <p>張忠謀(Morris Chang台積電董事): This is your world</p>
+<p>Python模組是使用Flask、bs4、lxml來建立倉儲</p>
 <p><span style="color: #800080;">4/16</span></p>
 <p>微軟用75億買下GitHub</p>
 <p><span style="color: #800080;">4/23</span></p>
@@ -412,7 +438,6 @@ function myFunction(){
 <p></p><h2>6月</h2>
 <p><span style="color: #ff0000;">6/4</span></p>
 <p>140.130.17.3 為目前系上最強網路  帳號及密碼為kmolab</p>
-<p>exFAT 格式化</p>
 <p>python-&gt;interpreter-fast prototyping tool</p>
 <p>c/c++-&gt;compiled language(compiler編輯器)-fast execuation</p>
 <p>cython結合2個程式</p>
